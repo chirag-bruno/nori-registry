@@ -1,0 +1,66 @@
+schema: 1
+name: neovim
+description: Hyperextensible Vim-based text editor
+homepage: https://neovim.io
+license: Apache-2.0
+bins:
+  - bin/nvim
+versions:
+  "0.10.0":
+    platforms:
+      linux-amd64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
+        checksum: sha256:be1f0988d0de71c375982b87b86cd28d2bab35ece8285abe3b0aac57604dfc5a
+      darwin-amd64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-macos-x86_64.tar.gz
+        checksum: sha256:ac4dc050f83e8537cfad3cbaf61ca4e5870ed30a7d0187cdaa33f8fa421aca1f
+      darwin-arm64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-macos-arm64.tar.gz
+        checksum: sha256:e00452adbe1e90fb8c2d9bd41855b3f585bf6e2db31b9c35456d6253b0a152dd
+      windows-amd64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-win64.zip
+        checksum: sha256:e32390f8ed607c9a3749c2faba68e1dd9ecc6fa9a7cae544e4dadd810766d064
+  "0.9.5":
+    platforms:
+      linux-amd64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
+        checksum: sha256:44ee395d9b5f8a14be8ec00d3b8ead34e18fe6461e40c9c8c50e6956d643b6ca
+      windows-amd64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-win64.zip
+        checksum: sha256:de6dc1f0edb45f5f225ee24ce80a4fcbc3a337932037e98ae143975fca2556bf
+  "0.9.4":
+    platforms:
+      linux-amd64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.gz
+        checksum: sha256:dbf4eae83647ca5c3ce1cd86939542a7b6ae49cd78884f3b4236f4f248e5d447
+      windows-amd64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-win64.zip
+        checksum: sha256:c2cccfa8d6a116ad3e30334826e05d86ccfa055cf67210b32bc84a8e9d7390bb
+  "0.9.2":
+    platforms:
+      linux-amd64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.9.2/nvim-linux64.tar.gz
+        checksum: sha256:fee870b6173f1da134281824a744ada91ef612723bd328683dc941ef16837ec5
+      windows-amd64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.9.2/nvim-win64.zip
+        checksum: sha256:73f0b11322a905fbd9c1ba28fca21bacbf9b8547f164d3d5439f39d1c272bf15
+  "0.9.1":
+    platforms:
+      linux-amd64:
+        type: tar
+        url: https://github.com/neovim/neovim/releases/download/v0.9.1/nvim-linux64.tar.gz
+        checksum: sha256:6c083017304213c3a3efde8d332a52231b8df8206d35146942097c303ebf93d5
+      windows-amd64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.9.1/nvim-win64.zip
+        checksum: sha256:af41890b8c14d4ed214a2ef6c1ab8e0be004eac7094d5df1cc4bc17ccf0a13ef

@@ -1,0 +1,4 @@
+packages:
+  - name: neovim
+    description: Hyperextensible Vim-based text editor
+
