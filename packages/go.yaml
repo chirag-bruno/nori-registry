@@ -1,0 +1,134 @@
+schema: 1
+name: go
+description: The Go programming language
+homepage: https://go.dev
+license: BSD-3-Clause
+bins:
+  - bin/go
+versions:
+  "1.25.4":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.4.darwin-amd64.tar.gz
+        checksum: sha256:33ba03ff9973f5bd26d516eea35328832a9525ecc4d169b15937ffe2ce66a7d8
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.25.4.darwin-arm64.tar.gz
+        checksum: sha256:c1b04e74251fe1dfbc5382e73d0c6d96f49642d8aebb7ee10a7ecd4cae36ebd2
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.4.linux-amd64.tar.gz
+        checksum: sha256:9fa5ffeda4170de60f67f3aa0f824e426421ba724c21e133c1e35d6159ca1bec
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.25.4.windows-amd64.zip
+        checksum: sha256:6dad204d42719795f22067553b2b042c0e710b32c5a00f6c67892865167fdfd0
+  "1.25.3":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.3.darwin-amd64.tar.gz
+        checksum: sha256:1641050b422b80dfd6299f8aa7eb8798d1cd23eac7e79f445728926e881b7bcd
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.25.3.darwin-arm64.tar.gz
+        checksum: sha256:7c083e3d2c00debfeb2f77d9a4c00a1aac97113b89b9ccc42a90487af3437382
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.3.linux-amd64.tar.gz
+        checksum: sha256:0335f314b6e7bfe08c3d0cfaa7c19db961b7b99fb20be62b0a826c992ad14e0f
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.25.3.windows-amd64.zip
+        checksum: sha256:bc249a599c6fe9d0d4093c363856f6c6320dbbe05e5d5d8818b711fb4a14fc23
+  "1.25.2":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.2.darwin-amd64.tar.gz
+        checksum: sha256:95493abb01da81638ab5083ff3f97e8f923cb42a64c2e16728e3cf5b0cd3fc5a
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.25.2.darwin-arm64.tar.gz
+        checksum: sha256:d1ade1b480e51b6269b6e65856c602aed047e1f0d32fffef7eebbd7faa8d7687
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.2.linux-amd64.tar.gz
+        checksum: sha256:d7fa7f8fbd16263aa2501d681b11f972a5fd8e811f7b10cb9b26d031a3d7454b
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.25.2.windows-amd64.zip
+        checksum: sha256:c18b46f6aa44dbfcd54a9db19dd2fcc5ad684819addcfcf968aa75dad89a89c8
+  "1.25.1":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.1.darwin-amd64.tar.gz
+        checksum: sha256:1d622468f767a1b9fe1e1e67bd6ce6744d04e0c68712adc689748bbeccb126bb
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.25.1.darwin-arm64.tar.gz
+        checksum: sha256:68deebb214f39d542e518ebb0598a406ab1b5a22bba8ec9ade9f55fb4dd94a6c
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.1.linux-amd64.tar.gz
+        checksum: sha256:7716a0d940a0f6ae8e1f3b3f4f36299dc53e31b16840dbd171254312c41ca12e
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.25.1.windows-amd64.zip
+        checksum: sha256:4a974de310e7ee1d523d2fcedb114ba5fa75408c98eb3652023e55ccf3fa7cab
+  "1.25.0":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.0.darwin-amd64.tar.gz
+        checksum: sha256:5bd60e823037062c2307c71e8111809865116714d6f6b410597cf5075dfd80ef
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.25.0.darwin-arm64.tar.gz
+        checksum: sha256:544932844156d8172f7a28f77f2ac9c15a23046698b6243f633b0a0b00c0749c
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.25.0.linux-amd64.tar.gz
+        checksum: sha256:2852af0cb20a13139b3448992e69b868e50ed0f8a1e5940ee1de9e19a123b613
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.25.0.windows-amd64.zip
+        checksum: sha256:89efb4f9b30812eee083cc1770fdd2913c14d301064f6454851428f9707d190b
+  "1.24.10":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.24.10.darwin-amd64.tar.gz
+        checksum: sha256:fde05d84f7f64c8d01564f299ea1897fe94457d20d8d9054200ac1f8ae1c2bc3
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.24.10.darwin-arm64.tar.gz
+        checksum: sha256:71c70841bcdadf4b5d2f7c0f099952907969f25235663622a47d6f2233ad39aa
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.24.10.linux-amd64.tar.gz
+        checksum: sha256:dd52b974e3d9c5a7bbfb222c685806def6be5d6f7efd10f9caa9ca1fa2f47955
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.24.10.windows-amd64.zip
+        checksum: sha256:2444fb53637facb37c06faa85d64c38c6cd23d22407f205edb68c7ddb8fbe0d4
+  "1.24.9":
+    platforms:
+      darwin-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.24.9.darwin-amd64.tar.gz
+        checksum: sha256:961aa2ae2b97e428d6d8991367e7c98cb403bac54276b8259aead42a0081591c
+      darwin-arm64:
+        type: tar
+        url: https://go.dev/dl/go1.24.9.darwin-arm64.tar.gz
+        checksum: sha256:af451b40651d7fb36db1bbbd9c66ddbed28b96d7da48abea50a19f82c6e9d1d6
+      linux-amd64:
+        type: tar
+        url: https://go.dev/dl/go1.24.9.linux-amd64.tar.gz
+        checksum: sha256:5b7899591c2dd6e9da1809fde4a2fad842c45d3f6b9deb235ba82216e31e34a6
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.24.9.windows-amd64.zip
+        checksum: sha256:dce0a479fa60142aebb67e22664dfae156d4ec1dd1ab314b7a2c27d4ee59681c
