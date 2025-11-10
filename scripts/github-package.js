@@ -307,7 +307,7 @@ function matchPlatform(filename) {
            (lower.includes('32') && !lower.includes('64') && !lower.includes('32bit'))) {
     arch = 'x86';
   }
-  // Check for standalone "64" (like win64) but not arm64
+  // Check for standalone "64" (like win64, linux64) but not arm64
   else if (lower.includes('64') && !lower.includes('arm') && !lower.includes('aarch')) {
     arch = 'amd64';
   }
@@ -319,6 +319,13 @@ function matchPlatform(filename) {
     if (lower.match(/win32[^a-z]/) || lower.includes('windows-32') || lower.includes('win-32')) {
       arch = 'x86';
     }
+  }
+  // Default to amd64 if OS is detected but no architecture found (for older releases)
+  // This handles cases like "nvim-macos.tar.gz" or "nvim-linux.tar.gz"
+  else if (os && !arch) {
+    // For older releases without architecture in filename, default to amd64
+    // (most common architecture for historical releases)
+    arch = 'amd64';
   }
 
   if (!os || !arch) {
