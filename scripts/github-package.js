@@ -549,11 +549,44 @@ function extractVersion(tag) {
 }
 
 /**
- * Validate version format
+ * Validate version format - strict semver
+ * Valid formats:
+ *   - 1.2.3 (stable)
+ *   - 1.2.3-alpha.1 (pre-release with dot separator)
+ *   - 1.2.3-beta.2 (pre-release with dot separator)
+ *   - 1.2.3-rc.3 (pre-release with dot separator)
+ * Invalid formats (will be rejected):
+ *   - 1.25rc3 (missing dots, should be 1.25.0-rc.3)
+ *   - 1.2 (missing patch version)
+ *   - 1.2.3-dev.123 (dev versions not standard semver)
  */
 function isValidVersion(version) {
-  // Basic semver validation
-  return /^\d+\.\d+\.\d+/.test(version);
+  // Must start with MAJOR.MINOR.PATCH
+  if (!/^\d+\.\d+\.\d+/.test(version)) {
+    return false;
+  }
+  
+  // If there's a pre-release identifier, it must use proper semver format with dots
+  // e.g., 1.2.3-rc.3, 1.2.3-alpha.1, 1.2.3-beta.2
+  // Reject formats like 1.25rc3, 1.25-rc3 (missing dots)
+  if (version.includes('-')) {
+    const parts = version.split('-');
+    if (parts.length > 1) {
+      const preRelease = parts[1].split('+')[0]; // Remove build metadata if present
+      // Pre-release must contain a dot (e.g., rc.3, alpha.1, beta.2)
+      // Reject formats like "rc3", "alpha1" without dots
+      if (!preRelease.includes('.')) {
+        return false;
+      }
+    }
+  }
+  
+  // Reject dev versions (not standard semver)
+  if (version.includes('-dev') || version.includes('+dev')) {
+    return false;
+  }
+  
+  return true;
 }
 
 /**

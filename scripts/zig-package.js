@@ -141,6 +141,34 @@ function extractVersion(versionStr) {
 }
 
 /**
+ * Validate version format - strict semver
+ */
+function isValidVersion(version) {
+  // Must start with MAJOR.MINOR.PATCH
+  if (!/^\d+\.\d+\.\d+/.test(version)) {
+    return false;
+  }
+  
+  // If there's a pre-release identifier, it must use proper semver format with dots
+  if (version.includes('-')) {
+    const parts = version.split('-');
+    if (parts.length > 1) {
+      const preRelease = parts[1].split('+')[0];
+      if (!preRelease.includes('.')) {
+        return false;
+      }
+    }
+  }
+  
+  // Reject dev versions (not standard semver)
+  if (version.includes('-dev') || version.includes('+dev')) {
+    return false;
+  }
+  
+  return true;
+}
+
+/**
  * Main function
  */
 async function main() {
@@ -167,6 +195,11 @@ async function main() {
       version = extractVersion(key);
     } else {
       continue; // Skip unknown keys
+    }
+    
+    // Validate version format
+    if (!isValidVersion(version)) {
+      continue; // Skip invalid semver versions
     }
     
     allVersions.push({

@@ -113,8 +113,41 @@ async function main() {
 
   const newVersions = [];
 
+  /**
+   * Validate version format - strict semver
+   */
+  function isValidVersion(version) {
+    // Must start with MAJOR.MINOR.PATCH
+    if (!/^\d+\.\d+\.\d+/.test(version)) {
+      return false;
+    }
+    
+    // If there's a pre-release identifier, it must use proper semver format with dots
+    if (version.includes('-')) {
+      const parts = version.split('-');
+      if (parts.length > 1) {
+        const preRelease = parts[1].split('+')[0];
+        if (!preRelease.includes('.')) {
+          return false;
+        }
+      }
+    }
+    
+    // Reject dev versions
+    if (version.includes('-dev') || version.includes('+dev')) {
+      return false;
+    }
+    
+    return true;
+  }
+
   for (const release of releases) {
     const version = release.version.replace(/^go/, '');
+    
+    // Skip invalid semver versions
+    if (!isValidVersion(version)) {
+      continue;
+    }
     
     if (existingVersions.has(version)) {
       continue;
