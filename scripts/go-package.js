@@ -39,12 +39,25 @@ function httpsRequest(url) {
 
 /**
  * Map Go platform to nori format
+ * Supports common platforms that nori CLI can handle
  */
 function mapPlatform(os, arch) {
+  // Linux platforms
   if (os === 'linux' && arch === 'amd64') return 'linux-amd64';
+  if (os === 'linux' && (arch === '386' || arch === 'x86')) return 'linux-x86';
+  if (os === 'linux' && arch === 'arm64') return 'linux-arm64';
+  
+  // macOS platforms
   if (os === 'darwin' && arch === 'amd64') return 'macos-amd64';
   if (os === 'darwin' && arch === 'arm64') return 'macos-arm64';
+  
+  // Windows platforms
   if (os === 'windows' && arch === 'amd64') return 'windows-amd64';
+  if (os === 'windows' && (arch === '386' || arch === 'x86')) return 'windows-x86';
+  if (os === 'windows' && arch === 'arm64') return 'windows-arm64';
+  
+  // Note: We skip BSD variants, Plan9, Solaris, etc. as they're less common
+  // and may not be supported by the nori CLI
   return null;
 }
 
