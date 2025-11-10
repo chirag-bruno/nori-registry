@@ -3,3 +3,5 @@ packages:
     description: Hyperextensible Vim-based text editor
   - name: go
     description: The Go programming language
+  - name: lazygit
+    description: Simple terminal UI for git commands

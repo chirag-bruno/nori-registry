@@ -1,8 +1,8 @@
-name: Update Go
+name: Update Lazygit
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Daily at 2 AM UTC
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
@@ -24,13 +24,20 @@ jobs:
         run: npm install
       
       - name: Run update script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          node scripts/go-package.js
+          node scripts/github-package.js \
+            --owner jesseduffield \
+            --repo lazygit \
+            --package-name lazygit \
+            --bins '[{"name":"lazygit","path":"lazygit"}]' \
+            --github-token ${{ secrets.GITHUB_TOKEN }}
       
       - name: Check for changes
         id: changes
         run: |
-          if [ -n "$(git status --porcelain packages/go.yaml)" ]; then
+          if [ -n "$(git status --porcelain packages/lazygit.yaml)" ]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
           else
             echo "has_changes=false" >> $GITHUB_OUTPUT
@@ -41,6 +48,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add packages/go.yaml
-          git commit -m "chore: update go versions [skip ci]"
+          git add packages/lazygit.yaml
+          git commit -m "chore: update lazygit versions [skip ci]"
           git push
+
