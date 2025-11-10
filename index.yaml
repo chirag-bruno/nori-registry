@@ -7,3 +7,5 @@ packages:
     description: Simple terminal UI for git commands
   - name: zig
     description: General-purpose programming language and toolchain
+  - name: node
+    description: JavaScript runtime built on Chrome's V8 JavaScript engine
