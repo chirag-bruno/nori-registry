@@ -5,3 +5,5 @@ packages:
     description: The Go programming language
   - name: lazygit
     description: Simple terminal UI for git commands
+  - name: zig
+    description: General-purpose programming language and toolchain
