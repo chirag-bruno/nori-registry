@@ -32,7 +32,8 @@ jobs:
             --repo neovim \
             --package-name neovim \
             --bins '[{"name":"nvim","path":"bin/nvim"}]' \
-            --github-token ${{ secrets.GITHUB_TOKEN }}
+            --github-token ${{ secrets.GITHUB_TOKEN }} \
+            --allow-download-checksum
       
       - name: Check for changes
         id: changes

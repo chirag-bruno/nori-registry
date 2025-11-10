@@ -32,7 +32,8 @@ jobs:
             --repo lazygit \
             --package-name lazygit \
             --bins '[{"name":"lazygit","path":"lazygit"}]' \
-            --github-token ${{ secrets.GITHUB_TOKEN }}
+            --github-token ${{ secrets.GITHUB_TOKEN }} \
+            --allow-download-checksum
       
       - name: Check for changes
         id: changes

@@ -715,6 +715,12 @@ function mergeVersions(existing, newVersions) {
  * Write YAML file
  */
 function writeYAML(filePath, data) {
+  // Ensure directory exists
+  const dir = path.dirname(filePath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  
   const yamlContent = yaml.dump(data, {
     lineWidth: -1,
     noRefs: true,
