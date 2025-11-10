@@ -1,0 +1,19 @@
+{
+  "owner": "example",
+  "repo": "tool",
+  "packageName": "tool",
+  "bins": [
+    {
+      "name": "tool",
+      "path": "bin/tool"
+    },
+    {
+      "name": "tool-helper",
+      "path": "bin/tool-helper"
+    }
+  ],
+  "description": "Optional description (auto-detected from GitHub if omitted)",
+  "homepage": "Optional homepage (auto-detected from GitHub if omitted)",
+  "license": "Optional license (auto-detected from GitHub if omitted)"
+}
+

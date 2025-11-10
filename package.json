@@ -1,0 +1,16 @@
+{
+  "name": "nori-registry",
+  "version": "1.0.0",
+  "description": "Official registry for the nori package manager",
+  "type": "module",
+  "scripts": {
+    "github-package": "node scripts/github-package.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

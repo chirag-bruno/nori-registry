@@ -1,4 +1,5 @@
 packages:
   - name: neovim
     description: Hyperextensible Vim-based text editor
-
+  - name: go
+    description: The Go programming language
