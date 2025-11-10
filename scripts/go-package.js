@@ -172,6 +172,10 @@ async function main() {
     };
 
     const yamlPath = path.join(PROJECT_ROOT, 'packages', 'go.yaml');
+    const dir = path.dirname(yamlPath);
+    // Ensure packages directory exists
+    fs.mkdirSync(dir, { recursive: true });
+    
     const yamlContent = yaml.dump(finalData, {
       lineWidth: -1,
       noRefs: true,
