@@ -4,6 +4,36 @@ description: JavaScript runtime built on Chrome's V8 JavaScript engine
 homepage: https://nodejs.org
 license: MIT
 versions:
+  - version: 25.5.0
+    bins:
+      - bin/node
+      - bin/npm
+      - bin/npx
+    platforms:
+      linux-arm64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-arm64.tar.gz
+        checksum: sha256:20f9aa9f2174786754f1941a178a62b906216fcdcd923400817f4bfa72e12336
+      linux-amd64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v25.5.0/node-v25.5.0-linux-x64.tar.gz
+        checksum: sha256:e8e50aee2e5328bcbc2ead32d86d0b577220ccdd80c438583dca3aa2965873f2
+      macos-arm64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-arm64.tar.gz
+        checksum: sha256:568ff9aae73e82499346be25250c7caacab2ca4bbb697bc73056cf3b983b8211
+      macos-amd64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v25.5.0/node-v25.5.0-darwin-x64.tar.gz
+        checksum: sha256:c36d2db9afc900b2cfa45b60a9423b4991ad86976acd3fe5b500abda91f21243
+      windows-arm64:
+        type: zip
+        url: https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-arm64.zip
+        checksum: sha256:7ca3d9bb4bf745e4bcd7b6ae6840c37fbd12da909ee5df6b932af42cdd997a19
+      windows-amd64:
+        type: zip
+        url: https://nodejs.org/dist/v25.5.0/node-v25.5.0-win-x64.zip
+        checksum: sha256:4d2773e98d3f35d172478d5101de1f571d851053d2ed67bbe39a5bdeae87d804
   - version: 25.4.0
     bins:
       - bin/node
