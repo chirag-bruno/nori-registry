@@ -4,6 +4,42 @@ description: simple terminal UI for git commands
 homepage: https://github.com/jesseduffield/lazygit
 license: MIT
 versions:
+  - version: 0.60.0
+    bins:
+      - lazygit
+    platforms:
+      windows-x86:
+        type: zip
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_windows_32-bit.zip
+        checksum: sha256:b3764707adc8c2c1cd77374dbb1ceea14cf454c8d193279023ee770c60dbad1b
+      windows-arm64:
+        type: zip
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_windows_arm64.zip
+        checksum: sha256:9b3439e8fb838c1dccdcb2aa064cef704f6d7e139cb53c9593a4804397d5097f
+      linux-amd64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_armv6.tar.gz
+        checksum: sha256:163c693791840468101d80955e610f46bda167edcd268d08f3aa1bc0edf5b218
+      windows-amd64:
+        type: zip
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_windows_armv6.zip
+        checksum: sha256:ab537a8fbf984739e05d0b8a2cb421206c807b94e99c001c769e503b7045b425
+      macos-amd64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_x86_64.tar.gz
+        checksum: sha256:9210a8bd8bf18537f9d7747361c8eba62518e10e4d5fbfe915cf110635eaab78
+      linux-x86:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_32-bit.tar.gz
+        checksum: sha256:e95fe55a2a1386275f3d2584152df31f759b6ce8abf8605a55cdaea9ec8788a9
+      macos-arm64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_arm64.tar.gz
+        checksum: sha256:5045f0ff2117f12cb5232d65e01c054eb9ea6b8e2f0f0b80e99fbaa589b581b9
+      linux-arm64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_linux_arm64.tar.gz
+        checksum: sha256:2c699579165416eede4d2cfaf7d76ccd8f3b20f20f2e8b4abff6b5a6350fcdd7
   - version: 0.59.0
     bins:
       - lazygit
