@@ -514,6 +514,36 @@ versions:
         type: zip
         url: https://nodejs.org/dist/v25.0.0/node-v25.0.0-win-x64.zip
         checksum: sha256:4ef3c23b13360e90ef894a48b9ceec509b03ea7a9a4ce54055ce8a744a30333c
+  - version: 24.16.0
+    bins:
+      - bin/node
+      - bin/npm
+      - bin/npx
+    platforms:
+      linux-arm64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v24.16.0/node-v24.16.0-linux-arm64.tar.gz
+        checksum: sha256:589f5b6dd4fcfee4dfda73013903c966abaa8abd93dbc9d436544e472b4f0e74
+      linux-amd64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v24.16.0/node-v24.16.0-linux-x64.tar.gz
+        checksum: sha256:2faf6a387e9b62b888e21c54f01249fb27537ffecf1842f29f4c919d0a59a0ff
+      macos-arm64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v24.16.0/node-v24.16.0-darwin-arm64.tar.gz
+        checksum: sha256:39189dab4eeb15706c424af0ac08a3044c9e48f7db12a7d77f6b7aafc7dd5df6
+      macos-amd64:
+        type: tar.gz
+        url: https://nodejs.org/dist/v24.16.0/node-v24.16.0-darwin-x64.tar.gz
+        checksum: sha256:298b4c7b3cb80765c8703e42b90324a4ece3b6634947b89e769c3c980ab55185
+      windows-arm64:
+        type: zip
+        url: https://nodejs.org/dist/v24.16.0/node-v24.16.0-win-arm64.zip
+        checksum: sha256:14834611d4c6b3c06054e7007732b90474c16e0b32f395e05b55a571ef71c6d2
+      windows-amd64:
+        type: zip
+        url: https://nodejs.org/dist/v24.16.0/node-v24.16.0-win-x64.zip
+        checksum: sha256:edaca9bd58ec8e92037dac4e877d52f6b8f430b81c18b57e264b4e2fb111cd56
   - version: 24.15.0
     bins:
       - bin/node
