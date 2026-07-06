@@ -4,6 +4,34 @@ description: Vim-fork focused on extensibility and usability
 homepage: https://neovim.io
 license: NOASSERTION
 versions:
+  - version: 0.12.4
+    bins:
+      - bin/nvim
+    platforms:
+      linux-arm64:
+        type: tar.gz
+        url: https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-linux-arm64.tar.gz
+        checksum: sha256:ceb7e88c6b681f0515d135dcdfad54f5eb4373b25ce6172197cd9a69c758063f
+      linux-amd64:
+        type: tar.gz
+        url: https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-linux-x86_64.tar.gz
+        checksum: sha256:012bf3fcac5ade43914df3f174668bf64d05e049a4f032a388c027b1ebd78628
+      macos-arm64:
+        type: tar.gz
+        url: https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-macos-arm64.tar.gz
+        checksum: sha256:51ab83afa66d663627c2ab1be43209b0f4e81360d4598b53efaa4d8195f24c89
+      macos-amd64:
+        type: tar.gz
+        url: https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-macos-x86_64.tar.gz
+        checksum: sha256:03fe16f8dd9f1e9eaf52d5e294913a39917b9e2faea30d7fb0fb385fbd36fe59
+      windows-arm64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-win-arm64.zip
+        checksum: sha256:49906085a3c473ee87a28319942c62216fb365a1a1a4f83dbc4ac41365f5e609
+      windows-amd64:
+        type: zip
+        url: https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-win64.zip
+        checksum: sha256:9fc3572829ffd13debb6e32555da2c8cc02555568260a9fc4cf1f65bbcca319c
   - version: 0.12.3
     bins:
       - bin/nvim
