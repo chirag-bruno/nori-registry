@@ -4,6 +4,34 @@ description: simple terminal UI for git commands
 homepage: https://github.com/jesseduffield/lazygit
 license: MIT
 versions:
+  - version: 0.64.0
+    bins:
+      - lazygit
+    platforms:
+      macos-arm64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.64.0/lazygit_0.64.0_darwin_arm64.tar.gz
+        checksum: sha256:df8d2dd27cdc1075785f1abb85b74fe393fcdc1f3fdf6cb2b587feb3ce72ba33
+      macos-amd64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.64.0/lazygit_0.64.0_darwin_x86_64.tar.gz
+        checksum: sha256:164d003f2eaa73e898d218882ec1eb9af517d3f3a351dff736390fc649e1b838
+      linux-amd64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.64.0/lazygit_0.64.0_linux_32-bit.tar.gz
+        checksum: sha256:1fd40a34b8d078efef848226ebd4db91d6619429cc28f98d06648b56a310559c
+      linux-arm64:
+        type: tar.gz
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.64.0/lazygit_0.64.0_linux_arm64.tar.gz
+        checksum: sha256:d286487eb18b2b82fccfd0f1c55d8445e6eb82c08ced3b9eb3e5be0e7c627fd0
+      windows-amd64:
+        type: zip
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.64.0/lazygit_0.64.0_windows_32-bit.zip
+        checksum: sha256:5f6a35146fba35f51227fdaa96084d29288e608dcc74860243dde9918bcaf966
+      windows-arm64:
+        type: zip
+        url: https://github.com/jesseduffield/lazygit/releases/download/v0.64.0/lazygit_0.64.0_windows_arm64.zip
+        checksum: sha256:c126db1d2e02135307443b60f80c51a1cb30a1852f250e438fcb944866896bbd
   - version: 0.63.1
     bins:
       - lazygit
