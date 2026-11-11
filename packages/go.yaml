@@ -4,6 +4,42 @@ description: The Go programming language
 homepage: https://go.dev
 license: BSD-3-Clause
 versions:
+  - version: 1.27.4
+    bins:
+      - bin/go
+    platforms:
+      macos-amd64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.27.4.darwin-amd64.tar.gz
+        checksum: sha256:2b799377704ef12db39bd254995d5c348c9cc8d86562ca817724390e56c38f43
+      macos-arm64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.27.4.darwin-arm64.tar.gz
+        checksum: sha256:91a44a2b8a716600ad94a4f143e156116620db8828086a6e3602291be9bd0bb4
+      linux-x86:
+        type: tar.gz
+        url: https://go.dev/dl/go1.27.4.linux-386.tar.gz
+        checksum: sha256:6ecb45737d2315acb0dbbc97ea8e13e7c19d4c796abe8d68907c40bce6f50bf7
+      linux-amd64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.27.4.linux-amd64.tar.gz
+        checksum: sha256:7226736c2339719cda28fbf3a54d71aa63bcefe376e98cef00034268dab24840
+      linux-arm64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.27.4.linux-arm64.tar.gz
+        checksum: sha256:3392582988a273a87ab5043ee1b2c9c17a2c3c00580bf9326c47a2e0aaaeac92
+      windows-x86:
+        type: zip
+        url: https://go.dev/dl/go1.27.4.windows-386.zip
+        checksum: sha256:ef86c83de402573f0dea26727032e239906ca1ba4f42130ce21c02e789a687f8
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.27.4.windows-amd64.zip
+        checksum: sha256:178ab98950ac69ab25069307dc6ade79f3816e414cce95b4da166a115cde1e7e
+      windows-arm64:
+        type: zip
+        url: https://go.dev/dl/go1.27.4.windows-arm64.zip
+        checksum: sha256:9e7a72565792b8ab370b37ac9ac109799237abacb39ff2f541c438b963c0cc64
   - version: 1.27.3
     bins:
       - bin/go
@@ -148,6 +184,42 @@ versions:
         type: zip
         url: https://go.dev/dl/go1.27.0.windows-arm64.zip
         checksum: sha256:6e0156b9788209931dd340fadc04171ce15063c17b51c92e7b86b51109626e90
+  - version: 1.26.11
+    bins:
+      - bin/go
+    platforms:
+      macos-amd64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.26.11.darwin-amd64.tar.gz
+        checksum: sha256:394baae971332f2bc783d6e2004ae57101479bd3b06ed8209a3fe3570d4ce498
+      macos-arm64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.26.11.darwin-arm64.tar.gz
+        checksum: sha256:e3a42e67a7a8acf450ebada2b074c7ca863000ca514907b7185b45e8f5cdff57
+      linux-x86:
+        type: tar.gz
+        url: https://go.dev/dl/go1.26.11.linux-386.tar.gz
+        checksum: sha256:e1d145019e9fef787d1e1aaa089bfd0f211fcc75a47b83253b30355c4e30d64b
+      linux-amd64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.26.11.linux-amd64.tar.gz
+        checksum: sha256:9849f4e04ee35303714e34fbc3ac8ab44ea3e448a95aa182f91e3b9b79c710ec
+      linux-arm64:
+        type: tar.gz
+        url: https://go.dev/dl/go1.26.11.linux-arm64.tar.gz
+        checksum: sha256:6c2f29b458b5add0835f18b776f69c8881a6d88428f1484a6da55755e620757e
+      windows-x86:
+        type: zip
+        url: https://go.dev/dl/go1.26.11.windows-386.zip
+        checksum: sha256:d09b412a788d32c1c2225e98f74a428dba6132bfe23dd5b95beb37412c0c3a64
+      windows-amd64:
+        type: zip
+        url: https://go.dev/dl/go1.26.11.windows-amd64.zip
+        checksum: sha256:71ae086f0137e665f855a811cc119152b6a783e0bbc1b906e709f46d80141eb0
+      windows-arm64:
+        type: zip
+        url: https://go.dev/dl/go1.26.11.windows-arm64.zip
+        checksum: sha256:a4c7e96d431ad186392a25e00db525839c6ee3840e80385e3c187e41e4f1f8d2
   - version: 1.26.10
     bins:
       - bin/go
